@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eighty Four</title>
+    <link rel="stylesheet" href="modele.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="fonctions.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo_icon.jpg" class="icone" alt="Icône"><a href="index.html" class="header__logo-link">Eighty Four</a>
+        </div>
+        <nav class="header__nav">
+            <a href="#about" class="header__nav-link">À propos</a>
+            <a href="#games" class="header__nav-link">Jeux</a>
+            <a href="#contact" class="header__nav-link">Contact</a>
+            <span class="header__menu-icon" id="menuIcon">
+                <div class="header__menu-icon-bar"></div>
+                <div class="header__menu-icon-bar"></div>
+                <div class="header__menu-icon-bar"></div>
+            </span>
+            <div class="header__menu" id="menu">
+                <a href="equipe.html" class="header__menu-link">Notre équipe</a>
+                <a href="jeux.html" class="header__menu-link">Jeux</a>
+                <a href="recrutement.html" class="header__menu-link">Recrutement</a>
+                <a href="contact.html" class="header__menu-link">Contact</a>
+                <a href="resume.html" class="header__menu-link">Résumé Exercice 2</a>
+                <a href="Plan_Travail_Synthese.docx" class="header__menu-link">Plan du travail</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero hero--index">
+        <h1 class="hero__title">Bienvenue chez Eighty Four</h1>
+        <p class="hero__subtitle">Créateurs de mondes immersifs et d'aventures inoubliables.</p>
+        <button class="hero__button">
+            <a href="jeux.html" class="hero__link">Découvrez nos jeux</a>
+        </button>
+    </section>
+    
+    <section class="about" id="about">
+        <h2 class="about__title">À propos</h2>
+        <p class="about__text">
+            Eighty Four est une équipe passionnée de développeurs et d'artistes dédiée à la création de jeux vidéo
+            innovants qui captivent les joueurs du monde entier. <br>Notre mission : donner vie à l'imagination.
+        </p>
+    </section>
+    
+    <section class="games" id="games">
+        <h2 class="games__title">Nos Jeux</h2>
+        <div class="gallery">
+            <img src="images/OuterWilds.jpg" alt="Jeu 1" title="Outer Wilds" class="gallery__image gallery__image--1">
+            <img src="images/FinalFantasyVII.jpg" alt="Jeu 2" title="Final Fantasy VII" class="gallery__image gallery__image--2">
+            <img src="images/RainbowSixSiege.jpg" alt="Jeu 3" title="Rainbow Six Siege" class="gallery__image gallery__image--3">
+            <img src="images/SmashUltimate.jpg" alt="Jeu 4" title="Smash Ultimate" class="gallery__image gallery__image--4">
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="contact__title">Contactez-nous</h2>
+        <p class="contact__text">
+            Des questions ou envie de collaborer ? Écrivez-nous à 
+            <a href="contact.html" class="contact__link">contact@eightyfour.com</a>.
+        </p>
+    </section>
+    
+
+    <footer>
+        &copy; 2024 Eighty Four. Tous droits réservés.
+    </footer>
+</body>
+
+</html>

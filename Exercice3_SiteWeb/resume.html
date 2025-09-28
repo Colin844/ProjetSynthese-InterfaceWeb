@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé des Notions</title>
+    <link rel="stylesheet" href="modele.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="fonctions.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo_icon.jpg" class="icone" alt="Icône"><a href="index.html" class="header__logo-link">Eighty Four</a>
+        </div>
+        <nav class="header__nav">
+            <a href="#flechee" class="header__nav-link">Fonctions Fléchées</a>
+            <a href="#tableau" class="header__nav-link">Manipulation Tableaux</a>
+            <a href="#destructuring" class="header__nav-link">Destructuring</a>
+            <a href="#spread-rest" class="header__nav-link">Spread Operator & Rest Parameters</a>
+            <a href="#bem" class="header__nav-link">Méthodologie BEM</a>
+            <span class="header__menu-icon" id="menuIcon">
+                <div class="header__menu-icon-bar"></div>
+                <div class="header__menu-icon-bar"></div>
+                <div class="header__menu-icon-bar"></div>
+            </span>
+            <div class="header__menu" id="menu">
+                <a href="equipe.html" class="header__menu-link">Notre équipe</a>
+                <a href="jeux.html" class="header__menu-link">Jeux</a>
+                <a href="recrutement.html" class="header__menu-link">Recrutement</a>
+                <a href="contact.html" class="header__menu-link">Contact</a>
+                <a href="resume.html" class="header__menu-link">Résumé Exercice 2</a>
+                <a href="Plan_Travail_Synthese.docx" class="header__menu-link">Plan du travail</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero hero--index">
+        <h1 class="hero__title">Résumé des Notions</h1>
+        <p class="hero__subtitle">Les concepts clés abordés dans l'exercice 2.</p>
+    </section>
+
+    <section class="about" id="flechee">
+        <h2 class="about__title">Les Fonctions Fléchées</h2>
+        <p class="about__text">Les fonctions fléchées (arrow functions) sont une syntaxe concise pour définir des fonctions en JavaScript. Elles permettent d'éviter l'utilisation explicite du mot-clé <code>function</code> et ne possèdent pas leur propre contexte <code>this</code>.</p>
+    </section>
+
+    <section class="about" id="tableau">
+        <h2 class="about__title">Manipulation des Tableaux</h2>
+        <p class="about__text">Trois méthodes essentielles permettent de manipuler les tableaux :</p>
+        <ul>
+            <li><strong><code>map()</code> :</strong> Permet de transformer chaque élément d'un tableau en retournant un nouveau tableau.</li>
+            <li><strong><code>filter()</code> :</strong> Filtre les éléments d'un tableau en fonction d'une condition donnée.</li>
+            <li><strong><code>reduce()</code> :</strong> Réduit un tableau à une seule valeur en appliquant une fonction sur chaque élément.</li>
+        </ul>
+    </section>
+
+    <section class="about" id="decomposition">
+        <h2 class="about__title">Destructuring</h2>
+        <p class="about__text">Le destructuring, ou affectation par décomposition, permet d'extraire des données d'objets ou de tableaux en une seule ligne de code :</p>
+        <pre><code>const [a, b] = [1, 2]; // a = 1, b = 2</code></pre>
+    </section>
+
+    <section class="about" id="spread-rest">
+        <h2 class="about__title">Spread Operator et Rest Parameters</h2>
+        <p class="about__text">Le <strong>spread operator</strong> (<code>...</code>) permet d'étaler les éléments d'un tableau ou d'un objet, tandis que les <strong>rest parameters</strong> permettent de collecter plusieurs éléments en un seul tableau :</p>
+        <pre><code>function sum(...numbers) {
+    return numbers.reduce((acc, n) => acc + n, 0);
+}</code></pre>
+    </section>
+
+    <section class="about" id="bem">
+        <h2 class="about__title">Méthodologie BEM</h2>
+        <p class="about__text">La méthodologie BEM (Block, Element, Modifier) est une convention de nommage utilisée en CSS pour structurer et organiser le code de manière cohérente. Exemple :</p>
+        <pre><code>.block__element--modifier</code></pre>
+    </section>
+
+    <footer>
+        &copy; 2024 Eighty Four. Tous droits réservés.
+    </footer>
+</body>
+
+</html>

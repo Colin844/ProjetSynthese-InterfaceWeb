@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Eighty Four</title>
+    <link rel="stylesheet" href="modele.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="fonctions.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo_icon.jpg" class="icone" alt="Icône"><a href="index.html" class="header__logo-link">Eighty Four</a>
+        </div>
+        <nav class="header__nav">
+            <span class="header__menu-icon" id="menuIcon">
+                <div class="header__menu-icon-bar"></div>
+                <div class="header__menu-icon-bar"></div>
+                <div class="header__menu-icon-bar"></div>
+            </span>
+            <div class="header__menu" id="menu">
+                <a href="equipe.html" class="header__menu-link">Notre équipe</a>
+                <a href="jeux.html" class="header__menu-link">Jeux</a>
+                <a href="recrutement.html" class="header__menu-link">Recrutement</a>
+                <a href="contact.html" class="header__menu-link">Contact</a>
+                <a href="resume.html" class="header__menu-link">Résumé Exercice 2</a>
+                <a href="Plan_Travail_Synthese.docx" class="header__menu-link">Plan du travail</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact">
+            <h2 class="contact__title">Contactez-nous</h2>
+            <p class="contact__description">
+                Vous avez une question ou souhaitez collaborer avec nous ? Remplissez le formulaire ci-dessous, et nous
+                vous répondrons dès que possible.
+            </p>
+            <form class="contact__form">
+                <label class="contact__label" for="name">Nom</label>
+                <input class="contact__input" type="text" id="name" name="name" placeholder="Votre nom">
+    
+                <label class="contact__label" for="email">Email</label>
+                <input class="contact__input" type="email" id="email" name="email" placeholder="Votre adresse email">
+    
+                <label class="contact__label" for="message">Message</label>
+                <textarea class="contact__textarea" id="message" name="message" rows="5" placeholder="Votre message"></textarea>
+    
+                <button class="contact__button" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Eighty Four. Tous droits réservés.
+    </footer>
+</body>
+
+</html>
